@@ -1,0 +1,69 @@
+% minutes-modern.tex
+\documentclass[12pt,a4paper]{article}
+\pagestyle{plain}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{pstricks}
+\usepackage{tikz}
+\usepackage{pgf-pie}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage[colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            citecolor=blue,
+            anchorcolor=blue,
+            bookmarks=true]{hyperref}
+\usepackage{float}
+\usepackage[british]{babel}
+\usepackage[nodayofweek]{datetime}
+\usepackage[colorinlistoftodos]{todonotes}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{10.0in}
+\setlength{\footskip}{18pt}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6in}
+\setlength{\marginparwidth}{1in}
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{1}{RGB}{255,155,155}
+\definecolor{2}{RGB}{255,183,115}
+\definecolor{3}{RGB}{215,215,105}
+\definecolor{Complete}{RGB}{104,230,103}
+\newcommand{\action}[3]{\todo[color=#2,size=\tiny]{\emph{#1}: #3}}
+
+
+\begin{document}
+
+\title{}
+\author{}
+\date{}
+\maketitle
+
+\begin{center}
+  \textbf{Attendees:} A~N~Other
+  \textbf{Apologies:} A~N~Other \\\
+\end{center}
+
+\hline
+
+\section{REVIEW OF MINUTES OF LAST MEETING}
+
+\section{MATTERS ARISING}
+
+\subsection{Name of Section}
+\label{section:nameofsection}
+
+\action{ANO}{1}{Detail of work}
+\action{ANO}{Complete}{Complete}
+
+\section{ANY OTHER BUSINESS}
+\label{section:aob}
+
+\newpage
+\listoftodos{To-do List}
+
+\end{document}
+

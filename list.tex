@@ -1,0 +1,42 @@
+% list.tex
+\documentclass[twocolumn,12pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[british]{babel}
+\usepackage[ampersand]{easylist}
+\usepackage{indentfirst}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{10.0in}
+\setlength{\footskip}{18pt}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6in}
+\let\margin\marginpar
+\newcommand\myMargin[1]{\margin{\raggedright\scriptsize #1}}
+\renewcommand{\marginpar}[1]{\myMargin{#1}}
+\pagenumbering{gobble} 
+
+\begin{document}
+
+\title{}
+\author{}
+\maketitle
+
+\section*{}
+
+\begin{easylist}[checklist]
+    & Item 1
+    & Item 2
+\end{easylist}
+
+\newpage
+
+\section*{}
+
+\begin{easylist}[checklist]
+    & Item 1
+    & Item 2
+\end{easylist}
+
+\end{document}
